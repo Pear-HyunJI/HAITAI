@@ -1,912 +1,964 @@
 /* ================ max-width: 1200px ================ */
 
 @media screen and (max-width: 1200px) {
-    #header .row {
-        padding: 0 15px;
-    }
+  #header .row {
+    padding: 0 15px;
+  }
 }
 
 /* ================ max-width: 1088px ================ */
 
 @media screen and (max-width: 1088px) {
-
-    /*<header>*/
-    #header h1 {
-        margin: 0 15px;
-    }
-
-    #header {
-        background: #fff;
-        position: static;
-        top: 0;
-        left: 0;
-        width: 100%;
-        border-bottom: 1px solid #d4d4d4;
-        z-index: 99;
-    }
-
-    #header .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0;
-    }
-
-    #header .menuopen {
-        display: block;
-        font-size: 40px;
-        margin-right: 15px;
-        color: #de1d85;
-    }
-
-    #header #nav {
-        display: none;
-        width: 100%;
-        padding-left: 0px;
-    }
-
-    #header #nav .depth1 {
-        display: block;
-    }
-
-    #header #nav .depth1>li {
-        display: block;
-        align-items: center;
-        position: relative;
-        border-top: 1px dotted rgb(201, 198, 198);
-        padding-top: 10px;
-    }
-
-    #header #nav .depth1 a {
-        font-size: 20px;
-        padding: 0px 0px;
-        margin: 5px 0;
-        color: #444444;
-        align-items: center;
-        padding-left: 15px;
-    }
-
-    #header #nav .depth1 li>a {
-        padding: 10px;
-        /* border-bottom: 2px solid #de1d85; */
-    }
-
-    #header #nav .depth2 {
-        position: static;
-        top: 100%;
-        left: 0;
-        display: none;
-        background: #fff5fd;
-        border: 0px;
-        border-top: block;
-        border-radius: 0 0 0px 0px;
-        width: 100%;
-        text-align: left;
-        margin-top: 10px;
-        padding-left: 10px;
-    }
-
-    #header #nav .depth2>li>a {
-        display: inline-block;
-        font-size: 17px;
-        color: #5c5c5c;
-        padding: 5px 10px 5px 0;
-        position: relative;
-        border: none;
-    }
-
-    #header #nav .depth2 .fa-circle {
-        color: #de1d85;
-        font-size: 5px;
-        position: absolute;
-        top: 17px;
-        display: none;
-    }
-
-    #header #nav .depth1>li.on>a {
-        border-bottom: 2px solid #de1d85;
-    }
-
-    #header #nav .depth1>li.on .depth2 {
-        display: block;
-    }
-
-    #header #nav .depth1 .depth2>li.on a {
-        color: #de1d85;
-        /* list-style: circle; */
-    }
-
-    #header #nav .depth1 .depth2>li.on .fa-circle {
-        display: block;
-    }
-
-    /*search*/
-    .searchContainer1 {
-        display: flex;
-        align-items: center;
-        width: 150px;
-        position: relative;
-        margin: 5px 15px 15px 15px;
-    }
-
-    .searchContainer2 {
-        display: none;
-        align-items: center;
-        width: 150px;
-        position: relative;
-    }
-
-    #search {
-        width: 100%;
-        padding: 5px 5px 5px 10px;
-        box-sizing: border-box;
-        border: 1px solid #d4d4d4;
-        border-radius: 3px;
-    }
-
-    #searchBtn {
-        border: 1px solid salmon;
-        position: absolute;
-        right: 10px;
-        top: 1px;
-        border: 0px;
-        background: none;
-        height: 27px;
-        line-height: 27px;
-        color: #999;
-        cursor: pointer;
-    }
-
-    #search::placeholder {
-        color: #999;
-        font-weight: 600;
-    }
-
-    .searchContainer1:focus-within #search {
-        border: 2px solid #de1d85;
-        outline: none;
-    }
-
-    .searchContainer1:focus-within #searchBtn {
-        color: #de1d85;
-        outline: none;
-    }
-
-    /*<section>*/
-
-    /*main*/
-
-    #section .main {
-        background: url(../img/bg-main0.jpg) center/cover;
-        /* height: 49vw; */
-        min-height: 500px;
-        position: relative;
-    }
-
-    #section .main .scroll img {
-        position: absolute;
-        bottom: 0%;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-
-    #section .main .glitter img {
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-
-
-    /*sweetWorld*/
-
-    #section .sweetWorld .row {
-        max-width: 816px;
-        padding: 50px 0;
-    }
-
-    #section .sweetWorld .text {
-        color: #5c5c5c;
-        text-align: center;
-    }
-
-    #section .sweetWorld .text h2 {
-        color: #4d4c4c;
-        font-size: 42px;
-        font-weight: 500;
-    }
-
-    #section .sweetWorld .text h3 {
-        font-size: 20px;
-        font-weight: 400;
-        padding: 2px 0 50px 0;
-    }
-
-    #section .sweetWorld .symbol {
-        display: flex;
-        text-align: center;
-        justify-content: space-around;
-    }
-
-    /*slidePage1*/
-
-    #section .slidePage1 {
-        background: #544f4f;
-        padding: 200px 0;
-    }
-
-    #section .slidePage1 .productSlideOuter {
-        width: 100%;
-    }
-
-    /*slidePage1 - arrow */
-    #section .slidePage1 .slideContainer1 {
-        position: relative;
-    }
-
-    #section .slidePage1 .slideContainer1 button.slick-arrow {
-        border: none;
-        background: none;
-        font-size: 50px;
-        color: #aeaba9;
-        position: absolute;
-        /* top: 50%; */
-        /* transform: translateY(-50%); */
-        left: 50%;
-        transform: translateX(-50%);
-        cursor: pointer;
-    }
-
-    #section .slidePage1 .slideContainer1 button.slick-next {
-        /* right: 40PX; */
-        bottom: -12%;
-    }
-
-    #section .slidePage1 .slideContainer1 button.slick-prev {
-        /* left: 40px; */
-        top: -15%;
-        z-index: 99;
-    }
-
-    /* slidePage1 - productSlide */
-
-    #section .slidePage1 .productSlideOuter .productSlideInner {
-        width: 300px;
-        height: 100%;
-        text-align: center;
-        background: url(../img/newproduct\ bg.png) no-repeat;
-        margin-left: 50%;
-        transform: translateX(-50%);
-    }
-
-    #section .slidePage1 .slideContainer1 .productSlideOuter .productSlide {
-        height: 100%;
-        position: relative;
-    }
-
-    #section .slidePage1 .slideContainer1 .productSlideOuter .productSlide img.contentProduct {
-        position: absolute;
-        top: 140px;
-        left: 0;
-    }
-
-    #section .slidePage1 .slideContainer1 .productSlideOuter .productSlide img.bgProduct {
-        opacity: 0;
-        height: 100%;
-    }
-
-    /* slidePage1 - eventSlide */
-    #section .slidePage1 .eventSlideOuter .eventSlideInner {
-        width: 300px;
-        text-align: center;
-        background: url(../img/event\ bg.png) no-repeat;
-        margin-left: 50%;
-        transform: translateX(-50%);
-    }
-
-    #section .slidePage1 .slideContainer1 .eventSlideOuter .eventSlide {
-        height: 100%;
-        position: relative;
-
-    }
-
-    #section .slidePage1 .slideContainer1 .eventSlideOuter .eventSlide img.contentEvent {
-        position: absolute;
-        top: 85px;
-        left: 0;
-    }
-
-    #section .slidePage1 .slideContainer1 .eventSlideOuter .eventSlide img.bgEvent {
-        opacity: 0;
-    }
-
-
-    /* slidePage1 - mallSlide */
-    #section .slidePage1 .mallSlideOuter .mallSlideInner {
-        width: 300px;
-        text-align: center;
-        background: url(../img/haitaimall\ bg.png) no-repeat;
-        margin-left: 50%;
-        transform: translateX(-50%);
-    }
-
-    #section .slidePage1 .slideContainer1 .mallSlideOuter .mallSlide {
-        height: 100%;
-        position: relative;
-    }
-
-    #section .slidePage1 .slideContainer1 .mallSlideOuter .mallSlide img.contentMall {
-        position: absolute;
-        top: 80px;
-        left: 0;
-    }
-
-    #section .slidePage1 .slideContainer1 .mallSlideOuter .mallSlide img.bgMall {
-        opacity: 0;
-    }
-
-
-    /* slidePage1 - productSlide - dots */
-
-    #section .slidePage1 .productSlideOuter .productSlideInner ul.slick-dots li {
-        display: inline-block;
-        margin: 10px 5px;
-    }
-
-    #section .slidePage1 .productSlideOuter .productSlideInner ul.slick-dots li button {
-        width: 10px;
-        height: 10px;
-        text-indent: 9999px;
-        overflow: hidden;
-        background: none;
-        border: 1px solid #aeaba9;
-        border-radius: 50%;
-    }
-
-    #section .slidePage1 .productSlideOuter .productSlideInner ul.slick-dots li.slick-active button {
-        background: #aeaba9;
-    }
-
-    /* slidePage1 - eventSlide - dots */
-
-    #section .slidePage1 .eventSlideOuter .eventSlideInner ul.slick-dots li {
-        display: inline-block;
-        margin: 10px 5px;
-    }
-
-    #section .slidePage1 .eventSlideOuter .eventSlideInner ul.slick-dots li button {
-        width: 10px;
-        height: 10px;
-        text-indent: 9999px;
-        overflow: hidden;
-        background: none;
-        border: 1px solid #aeaba9;
-        border-radius: 50%;
-    }
-
-    #section .slidePage1 .eventSlideOuter .eventSlideInner ul.slick-dots li.slick-active button {
-        background: #aeaba9;
-    }
-
-    /* slidePage1 - mallSlide - dots */
-
-    #section .slidePage1 .mallSlideOuter .mallSlideInner ul.slick-dots li {
-        display: inline-block;
-        margin: 10px 5px;
-    }
-
-    #section .slidePage1 .mallSlideOuter .mallSlideInner ul.slick-dots li button {
-        width: 10px;
-        height: 10px;
-        text-indent: 9999px;
-        overflow: hidden;
-        background: none;
-        border: 1px solid #aeaba9;
-        border-radius: 50%;
-    }
-
-    #section .slidePage1 .mallSlideOuter .mallSlideInner ul.slick-dots li.slick-active button {
-        background: #aeaba9;
-    }
-
-
-
-    /*slidePage2*/
-    /* slidePage2 - honeySlide의 첫번째 슬라이드 */
-    #section .slidePage2 {
-        background: url(../img/bg-main3.jpg) center / cover;
-        height: 95vh;
-        min-height: 850px;
-        width: 100%;
-    }
-
-    #section .slidePage2 .row {
-        max-width: 1300px;
-        padding: 0;
-    }
-
-    #section .slidePage2 .honeySlideOuter .honeySlideInner .honeySlide {
-        text-align: center;
-        height: 95vh;
-        min-height: 850px;
-        width: 100%;
-        position: relative;
-        overflow: hidden;
-    }
-
-    #section .slidePage2 .honeySlideOuter .honeySlideInner img.honeyWorld {
-        position: absolute;
-        bottom: 0px;
-
-    }
-
-    #section .slidePage2 .honeySlideOuter .honeySlideInner img.honeyStory {
-        position: absolute;
-        top: 90px;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-
-    #section .slidePage2 .honeySlideOuter .honeySlideInner img.honeyStoryContent {
-        position: absolute;
-        top: 240px;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-
-    #section .slidePage2 .honeySlideOuter .honeySlideInner img.honey {
-        position: absolute;
-        bottom: 45px;
-        right: 90px;
-    }
-
-    #section .slidePage2 .honeySlide .sweetContainer {
-        display: flex;
-        justify-content: space-between;
-        margin: 300px 100px 0;
-    }
-
-
-    #section .slidePage2 .honeySlide .sweetContainer .sweetBox .newSweetImg {
-        margin: 0 0 15px 50px;
-    }
-
-    #section .slidePage2 .honeySlide .sweetContainer .sweetBox .newSweetContent {
-        margin: 15px 0 0 2px;
-    }
-
-    #section .slidePage2 .honeySlide .sweetContainer .haitaiBox .haitaiSweetImg {
-        margin: 0 0 15px 53px;
-    }
-
-    #section .slidePage2 .honeySlide .sweetContainer .haitaiBox .haitaiSweetContent {
-        margin: 15px 2px 0 0;
-    }
-
-    /* slidePage2 - honeySlide의 첫번째 슬라이드 애니메이션 */
-
-    #section .slidePage2 .honeySlide .sweetContainer {
-        opacity: 1;
-    }
-
-    #section .slidePage2 .slick-current.slick-active .sweetContainer {
-        animation: fadeIn 1s 1 both 0.5s;
-    }
-
-    /* slidePage2 - honeySlide의 두번째 슬라이드 */
-
-    #section .slidePage2 .honeySlideOuter .honeySlideInner img.honeyFriend {
-        position: absolute;
-        bottom: 40px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    #section .slidePage2 .honeySlideOuter .honeySlideInner .characterButton {
-        position: absolute;
-        background: none;
-        border: none;
-        top: 40%;
-        left: 50%;
-        transform: translateX(-50%);
-        cursor: pointer;
-    }
-
-    /* slidePage2 - honeySlide의 두번째 슬라이드 애니메이션 */
-
-    #section .slidePage2 .honeySlideOuter .honeySlideInner .characterButton {
-        opacity: 1;
-    }
-
-    #section .slidePage2 .slick-current.slick-active .characterButton {
-        animation: fadeIn 1s 1 both 0.5s;
-    }
-
-    /*slidePage2 - arrow */
-    #section .slidePage2 .honeySlideOuter .honeySlideInner {
-        position: relative;
-    }
-
-    #section .slidePage2 .honeySlideOuter .honeySlideInner button.slick-arrow {
-        border: none;
-        background: none;
-        font-size: 50px;
-        color: #fff;
-        position: absolute;
-        top: 45%;
-        transform: translateY(-50%);
-        cursor: pointer;
-    }
-
-    #section .slidePage2 .honeySlideOuter .honeySlideInner button.slick-next {
-        right: -50px;
-    }
-
-    #section .slidePage2 .honeySlideOuter .honeySlideInner button.slick-prev {
-        left: -50px;
-        z-index: 99;
-    }
-
-    /*slidePage2 - dots */
-    #section .slidePage2 .honeySlideOuter .honeySlideInner {
-        position: relative;
-    }
-
-    #section .slidePage2 .honeySlideOuter .honeySlideInner ul.slick-dots {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-        bottom: 15px;
-    }
-
-    #section .slidePage2 .honeySlideOuter .honeySlideInner ul.slick-dots li {
-        display: inline-block;
-        margin: 10px 5px;
-    }
-
-    #section .slidePage2 .honeySlideOuter .honeySlideInner ul.slick-dots li button {
-        width: 12px;
-        height: 12px;
-        text-indent: 9999px;
-        overflow: hidden;
-        background: none;
-        border: 1.5px solid #ffecca;
-        border-radius: 50%;
-    }
-
-    #section .slidePage2 .honeySlideOuter .honeySlideInner ul.slick-dots li.slick-active button {
-        background: #ffecca;
-
-    }
-
-    /*sweetNews*/
-
-
-    #section .row {
-        min-width: 280px;
-    }
-
-    #section .sweetNews {
-        background: #e7e1d3;
-        padding: 110px auto;
-        text-align: center;
-        color: #737067;
-    }
-
-    #section .sweetNews h2 {
-        font-family: 'Varela Round', sans-serif;
-        font-size: 65px;
-        padding-bottom: 50px;
-    }
-
-    #section .sweetNews h3 {
-        font-family: 'Varela Round', sans-serif;
-        font-weight: normal;
-
-    }
-
-    #section .sweetNews ul {
-        display: block;
-        justify-content: space-around;
-        align-items: center;
-        padding: 5px 0 20px 0;
-        margin: 0 auto;
-        text-align: center;
-        position: relative;
-    }
-
-    #section .sweetNews ul li {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        flex: 1 1 33.33;
-        width: 263px;
-        height: 200px;
-        padding: 8px 20px;
-        margin: 5px;
-        background: #fff;
-        display: flex;
-        flex-direction: column;
-        border: 2px solid transparent;
-        position: relative;
-        overflow: hidden;
-    }
-
-
-
-    #section .sweetNews ul li div.kategoryContainer .kategory {
-        font-size: 15px;
-        color: #de1d85;
-        font-weight: bold;
-    }
-
-    #section .sweetNews ul li div.kategoryContainer p time {
-        font-size: 15px;
-        color: #c5c5c5;
-    }
-
-    #section .sweetNews ul li p.title {
-        font-size: 20px;
-        color: #636363;
-        padding: 12px 0 0 0;
-        word-break: keep-all;
-    }
-
-    #section .sweetNews ul li p.content {
-        font-size: 15px;
-        color: #636363;
-        padding: 15px 0 0 0;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    }
-
-
-    #section .sweetNews ul li div.kategoryContainer {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px dotted #cfcdcd;
-        padding-bottom: 12px;
-    }
-
-    #section .sweetNews ul li:hover {
-        cursor: pointer;
-        border: 2px solid #de1d85;
-    }
-
-    #section .sweetNews ul li:hover .title {
-        text-decoration: underline;
-    }
-
-    #section .sweetNews ul li:hover .facebookText {
-        text-decoration: underline;
-    }
-
-
-    #section .sweetNews ul li .facebookLogo {
-        border: 2px solid #fff;
-        position: absolute;
-        top: 15px;
-        left: 25px;
-    }
-
-    #section .sweetNews ul li .facebookText {
-        font-size: 20px;
-        color: #fff;
-        position: absolute;
-        top: 15px;
-        left: 90px;
-    }
-
-    /*haitaiLink*/
-
-    #section .haitaiLink .row {
-        max-width: 800px;
-        padding: 80px auto;
-    }
-
-    #section .haitaiLink h2 {
-        font-family: 'Varela Round', sans-serif;
-        font-size: 65px;
-        text-align: center;
-        color: #737067;
-    }
-
-    #section .haitaiLink ul li p {
-        font-weight: 500;
-        text-align: center;
-        color: #888783;
-    }
-
-    #section .haitaiLink ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        padding: 0px 0;
-        flex-wrap: wrap;
-    }
-
-    #section .haitaiLink ul li {
-        flex: 0 0 50%;
-        text-align: center;
-        padding: 10px 30px;
-    }
-
-    /*<footer>*/
-
-    #footer {
-        background: #666;
-    }
-
-    #footer .row {
-        padding: 0 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #footer .footerLogo {
-        padding: 30px 20px 30px 0;
-    }
-
-    #footer .companyInfo {
-        font-size: 11px;
-        color: #969696;
-    }
-
-    #footer .companyInfo a {
-        padding-right: 5px;
-    }
-
-    #footer .footerContainer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #footer .footerImg {
-        text-align: right;
-    }
+  /*<header>*/
+  #header h1 {
+    margin: 0 15px;
+  }
+
+  #header {
+    background: #fff;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #d4d4d4;
+    z-index: 99;
+  }
+
+  #header .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  #header .menuopen {
+    display: block;
+    font-size: 40px;
+    margin-right: 15px;
+    color: #de1d85;
+  }
+
+  #header #nav {
+    display: none;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  #header #nav .depth1 {
+    display: block;
+  }
+
+  #header #nav .depth1 > li {
+    display: block;
+    align-items: center;
+    position: relative;
+    border-top: 1px dotted rgb(201, 198, 198);
+    padding-top: 10px;
+  }
+
+  #header #nav .depth1 a {
+    font-size: 20px;
+    padding: 0px 0px;
+    margin: 5px 0;
+    color: #444444;
+    align-items: center;
+    padding-left: 15px;
+  }
+
+  #header #nav .depth1 li > a {
+    padding: 10px;
+    /* border-bottom: 2px solid #de1d85; */
+  }
+
+  #header #nav .depth2 {
+    position: static;
+    top: 100%;
+    left: 0;
+    display: none;
+    background: #fff5fd;
+    border: 0px;
+    border-top: block;
+    border-radius: 0 0 0px 0px;
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+
+  #header #nav .depth2 > li > a {
+    display: inline-block;
+    font-size: 17px;
+    color: #5c5c5c;
+    padding: 5px 10px 5px 0;
+    position: relative;
+    border: none;
+  }
+
+  #header #nav .depth2 .fa-circle {
+    color: #de1d85;
+    font-size: 5px;
+    position: absolute;
+    top: 17px;
+    display: none;
+  }
+
+  #header #nav .depth1 > li.on > a {
+    border-bottom: 2px solid #de1d85;
+  }
+
+  #header #nav .depth1 > li.on .depth2 {
+    display: block;
+  }
+
+  #header #nav .depth1 .depth2 > li.on a {
+    color: #de1d85;
+    /* list-style: circle; */
+  }
+
+  #header #nav .depth1 .depth2 > li.on .fa-circle {
+    display: block;
+  }
+
+  /*search*/
+  .searchContainer1 {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    position: relative;
+    margin: 5px 15px 15px 15px;
+  }
+
+  .searchContainer2 {
+    display: none;
+    align-items: center;
+    width: 150px;
+    position: relative;
+  }
+
+  #search {
+    width: 100%;
+    padding: 5px 5px 5px 10px;
+    box-sizing: border-box;
+    border: 1px solid #d4d4d4;
+    border-radius: 3px;
+  }
+
+  #searchBtn {
+    border: 1px solid salmon;
+    position: absolute;
+    right: 10px;
+    top: 1px;
+    border: 0px;
+    background: none;
+    height: 27px;
+    line-height: 27px;
+    color: #999;
+    cursor: pointer;
+  }
+
+  #search::placeholder {
+    color: #999;
+    font-weight: 600;
+  }
+
+  .searchContainer1:focus-within #search {
+    border: 2px solid #de1d85;
+    outline: none;
+  }
+
+  .searchContainer1:focus-within #searchBtn {
+    color: #de1d85;
+    outline: none;
+  }
+
+  /*<section>*/
+
+  /*main*/
+
+  #section .main {
+    background: url(../img/bg-main0.jpg) center/cover;
+    /* height: 49vw; */
+    min-height: 500px;
+    position: relative;
+  }
+
+  #section .main .scroll img {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  #section .main .glitter img {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  /*sweetWorld*/
+
+  #section .sweetWorld .row {
+    max-width: 816px;
+    padding: 50px 0;
+  }
+
+  #section .sweetWorld .text {
+    color: #5c5c5c;
+    text-align: center;
+  }
+
+  #section .sweetWorld .text h2 {
+    color: #4d4c4c;
+    font-size: 42px;
+    font-weight: 500;
+  }
+
+  #section .sweetWorld .text h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 2px 0 50px 0;
+  }
+
+  #section .sweetWorld .symbol {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  /*slidePage1*/
+
+  #section .slidePage1 {
+    background: #544f4f;
+    padding: 200px 0;
+    text-align: center;
+  }
+
+  #section .slidePage1 .productSlideOuter {
+    width: 100%;
+  }
+
+  /* slide1 반응형 탭 */
+  #section .slidePage1 .slideContainer1 {
+    border: 1px solid red;
+    width: 300px;
+    margin: 0px auto;
+  }
+
+  #section .slidePage1 .tapContent {
+    border: 1px solid green;
+    min-width: 300px;
+    min-height: 520px;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  #section .slidePage1 .tapTitle li.on {
+    background: orange;
+  }
+
+  #section .slidePage1 .slideContainer1 .tapContent {
+    display: none;
+  }
+  #section .slidePage1 .slideContainer1 .tapContent.on {
+    display: block;
+  }
+
+  /* slidePage1 - productSlide */
+
+  #section .slidePage1 .productSlideOuter .productSlideInner {
+    width: 300px;
+    height: 100%;
+    text-align: center;
+    background: url(../img/newproduct\ bg.png) no-repeat;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #section .slidePage1 .slideContainer1 .productSlideOuter .productSlide {
+    height: 100%;
+    position: relative;
+  }
+
+  #section
+    .slidePage1
+    .slideContainer1
+    .productSlideOuter
+    .productSlide
+    img.contentProduct {
+    position: absolute;
+    top: 140px;
+    left: 0;
+  }
+
+  #section
+    .slidePage1
+    .slideContainer1
+    .productSlideOuter
+    .productSlide
+    img.bgProduct {
+    opacity: 0;
+    height: 100%;
+  }
+
+  /* slidePage1 - eventSlide */
+  #section .slidePage1 .eventSlideOuter .eventSlideInner {
+    width: 300px;
+    text-align: center;
+    background: url(../img/event\ bg.png) no-repeat;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #section .slidePage1 .slideContainer1 .eventSlideOuter .eventSlide {
+    height: 100%;
+    position: relative;
+  }
+
+  #section
+    .slidePage1
+    .slideContainer1
+    .eventSlideOuter
+    .eventSlide
+    img.contentEvent {
+    position: absolute;
+    top: 85px;
+    left: 0;
+  }
+
+  #section
+    .slidePage1
+    .slideContainer1
+    .eventSlideOuter
+    .eventSlide
+    img.bgEvent {
+    opacity: 0;
+  }
+
+  /* slidePage1 - mallSlide */
+  #section .slidePage1 .mallSlideOuter .mallSlideInner {
+    width: 300px;
+    text-align: center;
+    background: url(../img/haitaimall\ bg.png) no-repeat;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #section .slidePage1 .slideContainer1 .mallSlideOuter .mallSlide {
+    height: 100%;
+    position: relative;
+  }
+
+  #section
+    .slidePage1
+    .slideContainer1
+    .mallSlideOuter
+    .mallSlide
+    img.contentMall {
+    position: absolute;
+    top: 80px;
+    left: 0;
+  }
+
+  #section .slidePage1 .slideContainer1 .mallSlideOuter .mallSlide img.bgMall {
+    opacity: 0;
+  }
+
+  /* slidePage1 - productSlide - dots */
+
+  #section .slidePage1 .productSlideOuter .productSlideInner ul.slick-dots li {
+    display: inline-block;
+    margin: 10px 5px;
+  }
+
+  #section
+    .slidePage1
+    .productSlideOuter
+    .productSlideInner
+    ul.slick-dots
+    li
+    button {
+    width: 10px;
+    height: 10px;
+    text-indent: 9999px;
+    overflow: hidden;
+    background: none;
+    border: 1px solid #aeaba9;
+    border-radius: 50%;
+  }
+
+  #section
+    .slidePage1
+    .productSlideOuter
+    .productSlideInner
+    ul.slick-dots
+    li.slick-active
+    button {
+    background: #aeaba9;
+  }
+
+  /* slidePage1 - eventSlide - dots */
+
+  #section .slidePage1 .eventSlideOuter .eventSlideInner ul.slick-dots li {
+    display: inline-block;
+    margin: 10px 5px;
+  }
+
+  #section
+    .slidePage1
+    .eventSlideOuter
+    .eventSlideInner
+    ul.slick-dots
+    li
+    button {
+    width: 10px;
+    height: 10px;
+    text-indent: 9999px;
+    overflow: hidden;
+    background: none;
+    border: 1px solid #aeaba9;
+    border-radius: 50%;
+  }
+
+  #section
+    .slidePage1
+    .eventSlideOuter
+    .eventSlideInner
+    ul.slick-dots
+    li.slick-active
+    button {
+    background: #aeaba9;
+  }
+
+  /* slidePage1 - mallSlide - dots */
+
+  #section .slidePage1 .mallSlideOuter .mallSlideInner ul.slick-dots li {
+    display: inline-block;
+    margin: 10px 5px;
+  }
+
+  #section .slidePage1 .mallSlideOuter .mallSlideInner ul.slick-dots li button {
+    width: 10px;
+    height: 10px;
+    text-indent: 9999px;
+    overflow: hidden;
+    background: none;
+    border: 1px solid #aeaba9;
+    border-radius: 50%;
+  }
+
+  #section
+    .slidePage1
+    .mallSlideOuter
+    .mallSlideInner
+    ul.slick-dots
+    li.slick-active
+    button {
+    background: #aeaba9;
+  }
+
+  /*slidePage2*/
+  /* slidePage2 - honeySlide의 첫번째 슬라이드 */
+  #section .slidePage2 {
+    background: url(../img/bg-main3.jpg) center / cover;
+    height: 95vh;
+    min-height: 850px;
+    width: 100%;
+  }
+
+  #section .slidePage2 .row {
+    max-width: 1300px;
+    padding: 0;
+  }
+
+  #section .slidePage2 .honeySlideOuter .honeySlideInner .honeySlide {
+    text-align: center;
+    height: 95vh;
+    min-height: 850px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #section .slidePage2 .honeySlideOuter .honeySlideInner img.honeyWorld {
+    position: absolute;
+    bottom: 0px;
+  }
+
+  #section .slidePage2 .honeySlideOuter .honeySlideInner img.honeyStory {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  #section .slidePage2 .honeySlideOuter .honeySlideInner img.honeyStoryContent {
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  #section .slidePage2 .honeySlideOuter .honeySlideInner img.honey {
+    position: absolute;
+    bottom: 45px;
+    right: 90px;
+  }
+
+  #section .slidePage2 .honeySlide .sweetContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 300px 100px 0;
+  }
+
+  #section .slidePage2 .honeySlide .sweetContainer .sweetBox .newSweetImg {
+    margin: 0 0 15px 50px;
+  }
+
+  #section .slidePage2 .honeySlide .sweetContainer .sweetBox .newSweetContent {
+    margin: 15px 0 0 2px;
+  }
+
+  #section .slidePage2 .honeySlide .sweetContainer .haitaiBox .haitaiSweetImg {
+    margin: 0 0 15px 53px;
+  }
+
+  #section
+    .slidePage2
+    .honeySlide
+    .sweetContainer
+    .haitaiBox
+    .haitaiSweetContent {
+    margin: 15px 2px 0 0;
+  }
+
+  /* slidePage2 - honeySlide의 첫번째 슬라이드 애니메이션 */
+
+  #section .slidePage2 .honeySlide .sweetContainer {
+    opacity: 1;
+  }
+
+  #section .slidePage2 .slick-current.slick-active .sweetContainer {
+    animation: fadeIn 1s 1 both 0.5s;
+  }
+
+  /* slidePage2 - honeySlide의 두번째 슬라이드 */
+
+  #section .slidePage2 .honeySlideOuter .honeySlideInner img.honeyFriend {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #section .slidePage2 .honeySlideOuter .honeySlideInner .characterButton {
+    position: absolute;
+    background: none;
+    border: none;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+
+  /* slidePage2 - honeySlide의 두번째 슬라이드 애니메이션 */
+
+  #section .slidePage2 .honeySlideOuter .honeySlideInner .characterButton {
+    opacity: 1;
+  }
+
+  #section .slidePage2 .slick-current.slick-active .characterButton {
+    animation: fadeIn 1s 1 both 0.5s;
+  }
+
+  /*slidePage2 - arrow */
+  #section .slidePage2 .honeySlideOuter .honeySlideInner {
+    position: relative;
+  }
+
+  #section .slidePage2 .honeySlideOuter .honeySlideInner button.slick-arrow {
+    border: none;
+    background: none;
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  #section .slidePage2 .honeySlideOuter .honeySlideInner button.slick-next {
+    right: -50px;
+  }
+
+  #section .slidePage2 .honeySlideOuter .honeySlideInner button.slick-prev {
+    left: -50px;
+    z-index: 99;
+  }
+
+  /*slidePage2 - dots */
+  #section .slidePage2 .honeySlideOuter .honeySlideInner {
+    position: relative;
+  }
+
+  #section .slidePage2 .honeySlideOuter .honeySlideInner ul.slick-dots {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 15px;
+  }
+
+  #section .slidePage2 .honeySlideOuter .honeySlideInner ul.slick-dots li {
+    display: inline-block;
+    margin: 10px 5px;
+  }
+
+  #section
+    .slidePage2
+    .honeySlideOuter
+    .honeySlideInner
+    ul.slick-dots
+    li
+    button {
+    width: 12px;
+    height: 12px;
+    text-indent: 9999px;
+    overflow: hidden;
+    background: none;
+    border: 1.5px solid #ffecca;
+    border-radius: 50%;
+  }
+
+  #section
+    .slidePage2
+    .honeySlideOuter
+    .honeySlideInner
+    ul.slick-dots
+    li.slick-active
+    button {
+    background: #ffecca;
+  }
+
+  /*sweetNews*/
+
+  #section .row {
+    min-width: 280px;
+  }
+
+  #section .sweetNews {
+    background: #e7e1d3;
+    padding: 110px auto;
+    text-align: center;
+    color: #737067;
+  }
+
+  #section .sweetNews h2 {
+    font-family: "Varela Round", sans-serif;
+    font-size: 65px;
+    padding-bottom: 50px;
+  }
+
+  #section .sweetNews h3 {
+    font-family: "Varela Round", sans-serif;
+    font-weight: normal;
+  }
+
+  #section .sweetNews ul {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0 20px 0;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
+
+  #section .sweetNews ul li {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    flex: 1 1 33.33;
+    width: 263px;
+    height: 200px;
+    padding: 8px 20px;
+    margin: 5px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #section .sweetNews ul li div.kategoryContainer .kategory {
+    font-size: 15px;
+    color: #de1d85;
+    font-weight: bold;
+  }
+
+  #section .sweetNews ul li div.kategoryContainer p time {
+    font-size: 15px;
+    color: #c5c5c5;
+  }
+
+  #section .sweetNews ul li p.title {
+    font-size: 20px;
+    color: #636363;
+    padding: 12px 0 0 0;
+    word-break: keep-all;
+  }
+
+  #section .sweetNews ul li p.content {
+    font-size: 15px;
+    color: #636363;
+    padding: 15px 0 0 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  #section .sweetNews ul li div.kategoryContainer {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted #cfcdcd;
+    padding-bottom: 12px;
+  }
+
+  #section .sweetNews ul li:hover {
+    cursor: pointer;
+    border: 2px solid #de1d85;
+  }
+
+  #section .sweetNews ul li:hover .title {
+    text-decoration: underline;
+  }
+
+  #section .sweetNews ul li:hover .facebookText {
+    text-decoration: underline;
+  }
+
+  #section .sweetNews ul li .facebookLogo {
+    border: 2px solid #fff;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+  }
+
+  #section .sweetNews ul li .facebookText {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    left: 90px;
+  }
+
+  /*haitaiLink*/
+
+  #section .haitaiLink .row {
+    max-width: 800px;
+    padding: 80px auto;
+  }
+
+  #section .haitaiLink h2 {
+    font-family: "Varela Round", sans-serif;
+    font-size: 65px;
+    text-align: center;
+    color: #737067;
+  }
+
+  #section .haitaiLink ul li p {
+    font-weight: 500;
+    text-align: center;
+    color: #888783;
+  }
+
+  #section .haitaiLink ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0px 0;
+    flex-wrap: wrap;
+  }
+
+  #section .haitaiLink ul li {
+    flex: 0 0 50%;
+    text-align: center;
+    padding: 10px 30px;
+  }
+
+  /*<footer>*/
+
+  #footer {
+    background: #666;
+  }
+
+  #footer .row {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #footer .footerLogo {
+    padding: 30px 20px 30px 0;
+  }
+
+  #footer .companyInfo {
+    font-size: 11px;
+    color: #969696;
+  }
+
+  #footer .companyInfo a {
+    padding-right: 5px;
+  }
+
+  #footer .footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #footer .footerImg {
+    text-align: right;
+  }
 }
-
 
 /* ================ max-width: 800px ================ */
 
 @media screen and (max-width: 800px) {
-    /*sweetWorld*/
+  /*sweetWorld*/
 
-    #section .sweetWorld .text h2 {
-        color: #4d4c4c;
-        font-size: 38px;
-        font-weight: 500;
-    }
+  #section .sweetWorld .text h2 {
+    color: #4d4c4c;
+    font-size: 38px;
+    font-weight: 500;
+  }
 
-    #section .sweetWorld .text h3 {
-        font-size: 17px;
-        font-weight: 400;
-        padding: 2px 0 50px 0;
-    }
+  #section .sweetWorld .text h3 {
+    font-size: 17px;
+    font-weight: 400;
+    padding: 2px 0 50px 0;
+  }
 
-    #section .sweetWorld .symbol {
-        display: block;
-        text-align: center;
-        justify-content: space-around;
-    }
+  #section .sweetWorld .symbol {
+    display: block;
+    text-align: center;
+    justify-content: space-around;
+  }
 
-    #section .sweetWorld .symbol img {
-        padding-bottom: 30px;
-    }
+  #section .sweetWorld .symbol img {
+    padding-bottom: 30px;
+  }
 
-    /*slidePage2*/
-    /* slidePage2 - honeySlide의 첫번째 슬라이드 */
-    #section .slidePage2 {
-        background: url(../img/bg-main3.jpg) center / cover;
-        height: 100vh;
-        width: 100%;
-    }
+  /*slidePage2*/
+  /* slidePage2 - honeySlide의 첫번째 슬라이드 */
+  #section .slidePage2 {
+    background: url(../img/bg-main3.jpg) center / cover;
+    height: 100vh;
+    width: 100%;
+  }
 
-    #section .slidePage2 .row {
-        max-width: 1300px;
-        padding: 0;
-    }
+  #section .slidePage2 .row {
+    max-width: 1300px;
+    padding: 0;
+  }
 
-    #section .slidePage2 .honeySlideOuter .honeySlideInner .honeySlide {
-        text-align: center;
-        height: 100vh;
-        width: 100%;
-        position: relative;
-        overflow: hidden;
-    }
+  #section .slidePage2 .honeySlideOuter .honeySlideInner .honeySlide {
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
 
-    #section .slidePage2 .honeySlideOuter .honeySlideInner img.honeyWorld {
-        position: absolute;
-        bottom: 0px;
-        display: none;
-    }
+  #section .slidePage2 .honeySlideOuter .honeySlideInner img.honeyWorld {
+    position: absolute;
+    bottom: 0px;
+    display: none;
+  }
 
-    #section .slidePage2 .honeySlideOuter .honeySlideInner img.honeyStory {
-        position: absolute;
-        top: 90px;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
+  #section .slidePage2 .honeySlideOuter .honeySlideInner img.honeyStory {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 
-    #section .slidePage2 .honeySlideOuter .honeySlideInner img.honeyStoryContent {
-        position: absolute;
-        top: 240px;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
+  #section .slidePage2 .honeySlideOuter .honeySlideInner img.honeyStoryContent {
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 
-    /* #section .slidePage2 .honeySlideOuter .honeySlideInner img.honey {
+  /* #section .slidePage2 .honeySlideOuter .honeySlideInner img.honey {
         position: absolute;
         bottom: 45px;
         right: 90px;
     } */
 
-    #section .slidePage2 .honeySlide .sweetContainer {
-        position: absolute;
-        display: block;
-        justify-content: space-between;
-        margin: 300px 0 0 0;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+  #section .slidePage2 .honeySlide .sweetContainer {
+    position: absolute;
+    display: block;
+    justify-content: space-between;
+    margin: 300px 0 0 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-    #section .slidePage2 .honeySlide .sweetContainer .haitaiBox {
-        padding-top: 20px;
-    }
+  #section .slidePage2 .honeySlide .sweetContainer .haitaiBox {
+    padding-top: 20px;
+  }
 
-    /* slidePage2 - honeySlide의 두번째 슬라이드 */
+  /* slidePage2 - honeySlide의 두번째 슬라이드 */
 
-    #section .slidePage2 .honeySlideOuter .honeySlideInner img.honeyFriend {
-        position: absolute;
-        bottom: 70px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+  #section .slidePage2 .honeySlideOuter .honeySlideInner img.honeyFriend {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-    #section .slidePage2 .honeySlideOuter .honeySlideInner .characterButton {
-        position: absolute;
-        background: none;
-        border: none;
-        top: 360px;
-        left: 50%;
-        transform: translateX(-50%);
-        cursor: pointer;
-    }
+  #section .slidePage2 .honeySlideOuter .honeySlideInner .characterButton {
+    position: absolute;
+    background: none;
+    border: none;
+    top: 360px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
 }
 
 /* ================ max-width: 1440px ================ */
 
 @media screen and (max-width: 1440px) {
-    #section .slidePage2 .honeySlideOuter .honeySlideInner button.slick-next {
-        right: 40px;
-    }
+  #section .slidePage2 .honeySlideOuter .honeySlideInner button.slick-next {
+    right: 40px;
+  }
 
-    #section .slidePage2 .honeySlideOuter .honeySlideInner button.slick-prev {
-        left: 40px;
-        z-index: 99;
-    }
+  #section .slidePage2 .honeySlideOuter .honeySlideInner button.slick-prev {
+    left: 40px;
+    z-index: 99;
+  }
 }
 
 /* ================ max-width: 500px ================ */
 
 @media screen and (max-width: 500px) {
-    #section .sweetNews {
-        background: #e7e1d3;
-        padding: 110px 50px;
-        text-align: center;
-        color: #737067;
-    }
+  #section .sweetNews {
+    background: #e7e1d3;
+    padding: 110px 50px;
+    text-align: center;
+    color: #737067;
+  }
 
-    #section .sweetNews ul li {
-        min-width: 263px;
-        height: 200px;
-        padding: 8px 20px;
-        margin: 5px;
-    }
-
+  #section .sweetNews ul li {
+    min-width: 263px;
+    height: 200px;
+    padding: 8px 20px;
+    margin: 5px;
+  }
 }

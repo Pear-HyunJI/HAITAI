@@ -13,21 +13,21 @@ $(".slideContainer1").slick({
   slidesToScroll: 1,
   arrows: true,
 
-  responsive: [
-    {
-      breakpoint: 1089, // 화면 크기가 768px 이하일 때
-      settings: {
-        slidesToShow: 1, // 한 번에 보여질 슬라이드 수를 1개로 조절
-        slidesToScroll: 1,
-        vertical: true,
-        arrows: true,
-        prevArrow:
-          '<button class="slick-prev slick-arrow" aria-label="previous" type="button" ><i class="fa-solid fa-chevron-up"></i></button>',
-        nextArrow:
-          '<button class="slick-next slick-arrow" aria-label="Next" type="button" ><i class="fa-solid fa-chevron-down"></i></button>',
-      },
-    },
-  ],
+  // responsive: [
+  //   {
+  //     breakpoint: 1089, // 화면 크기가 768px 이하일 때
+  //     settings: {
+  //       slidesToShow: 1, // 한 번에 보여질 슬라이드 수를 1개로 조절
+  //       slidesToScroll: 1,
+  //       vertical: true,
+  //       arrows: true,
+  //       prevArrow:
+  //         '<button class="slick-prev slick-arrow" aria-label="previous" type="button" ><i class="fa-solid fa-chevron-up"></i></button>',
+  //       nextArrow:
+  //         '<button class="slick-next slick-arrow" aria-label="Next" type="button" ><i class="fa-solid fa-chevron-down"></i></button>',
+  //     },
+  //   },
+  // ],
 });
 
 $(".productSlideInner").slick({
@@ -51,6 +51,36 @@ $(".mallSlideInner").slick({
   speed: 300,
   arrows: false,
 });
+
+// slide1 반응형
+
+//$(document).ready(function () {
+// 초기 실행
+//checkWindowSize();
+
+// 창 크기 변경 시 실행
+//$(window).resize(function () {
+//  checkWindowSize();
+//});
+
+//function checkWindowSize() {
+if ($(window).width() <= 1100) {
+  $(".tapTitle > li").on("click", function () {
+    $(this).addClass("on").siblings().removeClass("on");
+    let num = $(this).index();
+    $(this)
+      .parent()
+      .next()
+      .find(".tapContent")
+      .eq(num)
+      .addClass("on")
+      .siblings()
+      .removeClass("on");
+  });
+} else {
+}
+//}
+//});
 
 //slidePage2
 $(".honeySlideInner").slick({
