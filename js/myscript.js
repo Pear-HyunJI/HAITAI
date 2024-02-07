@@ -12,22 +12,6 @@ $(".slideContainer1").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   arrows: true,
-
-  // responsive: [
-  //   {
-  //     breakpoint: 1089,
-  //     settings: {
-  //       slidesToShow: 1, // 한 번에 보여질 슬라이드 수를 1개로 조절
-  //       slidesToScroll: 1,
-  //       vertical: true,
-  //       arrows: true,
-  //       prevArrow:
-  //         '<button class="slick-prev slick-arrow" aria-label="previous" type="button" ><i class="fa-solid fa-chevron-up"></i></button>',
-  //       nextArrow:
-  //         '<button class="slick-next slick-arrow" aria-label="Next" type="button" ><i class="fa-solid fa-chevron-down"></i></button>',
-  //     },
-  //   },
-  // ],
 });
 
 $(".productSlideInner").slick({
@@ -52,7 +36,7 @@ $(".mallSlideInner").slick({
   arrows: false,
 });
 
-// slide1 반응형
+// slide1 반응형 tap
 
 if ($(window).width() <= 10089) {
   $(".tapTitle > li").on("click", function () {
@@ -87,7 +71,8 @@ $(".honeySlideInner").slick({
 
 $("#nav .depth1 > li").on("mouseover mouseout", function () {
   if ($("html").hasClass("pc")) {
-    $(this).toggleClass("on");
+    $(".subbg").stop().slideToggle(200);
+    $(".depth2").stop().slideToggle(200);
   }
 });
 $("#nav .depth1 > li").on("click", function () {
@@ -99,6 +84,8 @@ $("#nav .depth1 > li").on("click", function () {
 $("#nav .depth1 .depth2 > li").on("mouseover mouseout", function () {
   $(this).toggleClass("on");
   $(this).siblings().removeClass("on");
+  $(this).parent().parent().toggleClass("on");
+  $(this).parent().parent().siblings().removeClass("on");
 });
 
 $("#header .menuopen").on("click", function () {
