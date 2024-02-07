@@ -231,6 +231,10 @@ img {
   width: 100%;
 }
 
+#section .slidePage1 .tapTitle {
+  display: none;
+}
+
 /* slidePage1 - productSlide */
 
 #section .slidePage1 .productSlideOuter .productSlideInner {

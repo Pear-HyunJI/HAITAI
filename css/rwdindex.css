@@ -231,7 +231,7 @@
 
   #section .slidePage1 {
     background: #544f4f;
-    padding: 200px 0;
+    padding: 0px 0 50px 0;
     text-align: center;
   }
 
@@ -240,22 +240,34 @@
   }
 
   /* slide1 반응형 탭 */
+
   #section .slidePage1 .slideContainer1 {
-    border: 1px solid red;
     width: 300px;
     margin: 0px auto;
   }
 
   #section .slidePage1 .tapContent {
-    border: 1px solid green;
     min-width: 300px;
     min-height: 520px;
     margin: 10px auto;
     text-align: center;
   }
 
+  #section .slidePage1 .tapTitle {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  #section .slidePage1 .tapTitle li {
+    flex: 1;
+    font-family: "Varela Round", sans-serif;
+    font-size: 20px;
+    padding: 10px 0;
+    color: #cabebe;
+  }
   #section .slidePage1 .tapTitle li.on {
-    background: orange;
+    background: #de1d85;
+    color: #fff;
   }
 
   #section .slidePage1 .slideContainer1 .tapContent {
@@ -271,7 +283,7 @@
     width: 300px;
     height: 100%;
     text-align: center;
-    background: url(../img/newproduct\ bg.png) no-repeat;
+    background: url(../img/rwd\ tap\ bg.png) no-repeat;
     margin-left: 50%;
     transform: translateX(-50%);
   }
@@ -306,7 +318,7 @@
   #section .slidePage1 .eventSlideOuter .eventSlideInner {
     width: 300px;
     text-align: center;
-    background: url(../img/event\ bg.png) no-repeat;
+    background: url(../img/rwd\ tap\ bg.png) no-repeat;
     margin-left: 50%;
     transform: translateX(-50%);
   }
@@ -340,7 +352,7 @@
   #section .slidePage1 .mallSlideOuter .mallSlideInner {
     width: 300px;
     text-align: center;
-    background: url(../img/haitaimall\ bg.png) no-repeat;
+    background: url(../img/rwd\ tap\ bg.png) no-repeat;
     margin-left: 50%;
     transform: translateX(-50%);
   }

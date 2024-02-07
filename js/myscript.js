@@ -15,7 +15,7 @@ $(".slideContainer1").slick({
 
   // responsive: [
   //   {
-  //     breakpoint: 1089, // 화면 크기가 768px 이하일 때
+  //     breakpoint: 1089,
   //     settings: {
   //       slidesToShow: 1, // 한 번에 보여질 슬라이드 수를 1개로 조절
   //       slidesToScroll: 1,
@@ -54,17 +54,7 @@ $(".mallSlideInner").slick({
 
 // slide1 반응형
 
-//$(document).ready(function () {
-// 초기 실행
-//checkWindowSize();
-
-// 창 크기 변경 시 실행
-//$(window).resize(function () {
-//  checkWindowSize();
-//});
-
-//function checkWindowSize() {
-if ($(window).width() <= 1100) {
+if ($(window).width() <= 10089) {
   $(".tapTitle > li").on("click", function () {
     $(this).addClass("on").siblings().removeClass("on");
     let num = $(this).index();
@@ -79,8 +69,6 @@ if ($(window).width() <= 1100) {
   });
 } else {
 }
-//}
-//});
 
 //slidePage2
 $(".honeySlideInner").slick({
