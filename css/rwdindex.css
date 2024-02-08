@@ -428,28 +428,6 @@
     background: #aeaba9;
   }
 
-  /* sweetFactory */
-  #section .sweetFactory {
-    padding: 130px 0;
-    font-family: 'Noto Sans KR',
-      sans-serif;
-  }
-
-  #section .sweetFactory .factoryWrap {
-    display: block;
-  }
-
-  #section .sweetFactory .videoText {
-    flex: 50%;
-    text-align: left;
-    padding: 45px;
-  }
-
-  #section .sweetFactory .videoBox {
-    flex: 50%;
-    text-align: left;
-  }
-
   /*slidePage2*/
   /* slidePage2 - honeySlide의 첫번째 슬라이드 */
   #section .slidePage2 {
@@ -613,6 +591,28 @@
 
   #section .slidePage2 .honeySlideOuter .honeySlideInner ul.slick-dots li.slick-active button {
     background: #ffecca;
+  }
+
+  /* sweetFactory */
+  #section .sweetFactory {
+    padding: 130px 0;
+    font-family: 'Noto Sans KR',
+      sans-serif;
+  }
+
+  #section .sweetFactory .factoryWrap {
+    display: block;
+  }
+
+  #section .sweetFactory .videoText {
+    flex: 50%;
+    text-align: left;
+    padding: 45px;
+  }
+
+  #section .sweetFactory .videoBox {
+    flex: 50%;
+    text-align: left;
   }
 
   /*sweetNews*/

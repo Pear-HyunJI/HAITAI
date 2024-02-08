@@ -150,3 +150,15 @@ $("#nav .depth1 > li").hover(
     $(".subnavImg").removeClass("sn" + index);
   }
 );
+
+//sweetFactory a
+$(".sweetFactory .videoText .factoryButton .a").on(
+  "mouseover mouseout",
+  function () {
+    if (!$(this).find("i").hasClass("fa-cookie-bite")) {
+      $(this).addClass("fa-cookie-bite").removeClass("fa-cookie");
+    } else {
+      $(this).addClass("fa-cookie").removeClass("fa-cookie-bite");
+    }
+  }
+);
