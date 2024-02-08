@@ -50,7 +50,7 @@ img {
   width: 100%;
   /* border-bottom: 1px solid #b1b1b1; */
   z-index: 99;
-  position: relative;
+  /* position: relative; */
 }
 
 #header .menuopen {
