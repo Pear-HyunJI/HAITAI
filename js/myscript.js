@@ -2,6 +2,10 @@ function getWindowWidth() {
   let ww = $(window).width();
   if (ww > 910) {
     $("html").addClass("pc").removeClass("mobile");
+    $("#header .menuopen")
+      .find("i")
+      .removeClass("fa-times")
+      .addClass("fa-bars");
     $("#header #nav").css({
       display: "flex",
       width: "auto",
