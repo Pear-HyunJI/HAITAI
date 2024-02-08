@@ -72,7 +72,14 @@ $(".honeySlideInner").slick({
 $("#nav .depth1 > li").on("mouseover mouseout", function () {
   if ($("html").hasClass("pc")) {
     $(".subbg").stop().slideToggle(200);
+    $(".subnavImg").stop().slideToggle(200);
     $(".depth2").stop().slideToggle(200);
+  }
+});
+$("#nav .depth1 .depth2 > li").on("mouseover mouseout", function () {
+  if ($("html").hasClass("pc")) {
+    $(this).parent().parent().toggleClass("on");
+    $(this).parent().parent().siblings().removeClass("on");
   }
 });
 $("#nav .depth1 > li").on("click", function () {
@@ -84,11 +91,35 @@ $("#nav .depth1 > li").on("click", function () {
 $("#nav .depth1 .depth2 > li").on("mouseover mouseout", function () {
   $(this).toggleClass("on");
   $(this).siblings().removeClass("on");
-  $(this).parent().parent().toggleClass("on");
-  $(this).parent().parent().siblings().removeClass("on");
 });
 
 $("#header .menuopen").on("click", function () {
   $(this).next().stop().slideToggle(200);
   $(this).find("i").toggleClass("fa-bars fa-times");
 });
+
+// $("#nav .depth1 > li").hover(
+//   function () {
+//     // 마우스 오버 시
+//     let index = $(this).index();
+//     $(".subnavImg").addClass("sn" + index);
+//   },
+//   function () {
+//     // 마우스 아웃 시
+//     $(".subnavImg").removeClass("sn" + index);
+//   }
+// );
+
+$("#nav .depth1 > li").hover(
+  function () {
+    // 마우스 오버 시
+    let index = $(this).index();
+    $(".subnavImg").addClass("sn" + index);
+    $(this).data("hoveredIndex", index);
+  },
+  function () {
+    // 마우스 아웃 시
+    let index = $(this).data("hoveredIndex");
+    $(".subnavImg").removeClass("sn" + index);
+  }
+);

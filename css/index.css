@@ -32,6 +32,14 @@ img {
   margin: 0 auto;
 }
 
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
 /*<header>*/
 
 #header {
@@ -43,22 +51,6 @@ img {
   /* border-bottom: 1px solid #b1b1b1; */
   z-index: 99;
   position: relative;
-}
-
-#header .subbg {
-  width: 100%;
-  height: 305px;
-  background: #fff5fd;
-  border-bottom: 2px solid #faa8d2;
-  border-radius: 0 0 15px 15px;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  display: none;
-}
-
-#header .subbg.on {
-  display: block;
 }
 
 #header .menuopen {
@@ -86,7 +78,7 @@ img {
 }
 
 #header #nav .depth1>li.on {
-  border-bottom: 1px solid #de1d85;
+  border-top: 1px solid #de1d85;
 }
 
 #header #nav .depth1 a {
@@ -132,6 +124,56 @@ img {
 
 #header #nav .depth1 .depth2>li.on .fa-circle {
   display: block;
+}
+
+#header .subbg {
+  width: 100%;
+  height: 305px;
+  background: #fff5fd;
+  border-bottom: 2px solid #faa8d2;
+  border-radius: 0 0 15px 15px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+
+#header #nav {
+  position: relative;
+}
+
+/* subnavImg 스프린트 */
+#header .subnavImg {
+  position: absolute;
+  top: 100%;
+  display: none;
+}
+
+#header .sn1 {
+  background-image: url(../img/제품소개\ \(1\).png);
+}
+
+#header .sn2 {
+  background-image: url(../img/달콤한세상.png);
+}
+
+#header .sn3 {
+  background-image: url(../img/이벤트\ \(1\).png);
+}
+
+#header .sn4 {
+  background-image: url(../img/고객센터\ \(1\).png);
+}
+
+#header .sn5 {
+  background-image: url(../img/회사소개\ \(1\).png);
+}
+
+
+#header .subnavSprite {
+  width: 218px;
+  height: 275px;
+  background-position: 0 0;
 }
 
 /*search*/
@@ -503,14 +545,6 @@ img {
 /* slidePage2 - sprite */
 .newSweetImg {
   background-image: url(../img/img-main2-0-0-1.png);
-}
-
-.blind {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  text-indent: -9999px;
 }
 
 .newSweetSprite {

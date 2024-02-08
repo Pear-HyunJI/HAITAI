@@ -121,6 +121,15 @@
     display: block;
   }
 
+
+  #header .subbg {
+    display: none;
+  }
+
+  #header .subnavImg {
+    display: none;
+  }
+
   /*search*/
   .searchContainer1 {
     display: flex;
