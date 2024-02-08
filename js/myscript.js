@@ -1,9 +1,25 @@
-let ww = $(window).width();
-if (ww > 1088) {
-  $("html").addClass("pc");
-} else {
-  $("html").addClass("mobile");
+function getWindowWidth() {
+  let ww = $(window).width();
+  if (ww > 910) {
+    $("html").addClass("pc").removeClass("mobile");
+    $("#header #nav").css({
+      display: "flex",
+      width: "auto",
+    });
+  } else {
+    $("html").addClass("mobile").removeClass("pc");
+    $("#header #nav").css({
+      display: "none",
+      width: "100%",
+    });
+  }
 }
+
+getWindowWidth();
+
+$(window).resize(function () {
+  getWindowWidth();
+});
 
 //slidePage1
 $(".slideContainer1").slick({
