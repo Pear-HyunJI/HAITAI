@@ -40,6 +40,7 @@ img {
   text-indent: -9999px;
 }
 
+
 /*<header>*/
 
 #header {
@@ -431,6 +432,67 @@ img {
 
 #section .slidePage1 .mallSlideOuter .mallSlideInner ul.slick-dots li.slick-active button {
   background: #aeaba9;
+}
+
+/* sweetFactory */
+#section .sweetFactory {
+  padding: 130px 0;
+  font-family: 'Noto Sans KR',
+    sans-serif;
+}
+
+#section .sweetFactory .factoryWrap {
+  display: flex;
+}
+
+#section .sweetFactory .videoText {
+  flex: 50%;
+  text-align: left;
+  padding: 90px;
+}
+
+#section .sweetFactory .videoBox {
+  flex: 50%;
+  text-align: left;
+}
+
+#section .sweetFactory .videoText h2 {
+  font-family: 'Varela Round',
+    sans-serif;
+  color: #de1d85;
+  font-size: 60px;
+  padding: 5px 0 40px 0;
+}
+
+#section .sweetFactory .videoText h3 {
+  color: #737067;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+#section .sweetFactory .videoText p {
+  color: #737067;
+  font-size: 16px;
+}
+
+#section .sweetFactory .videoText p span {
+  /* color: #c02fb4; */
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#section .sweetFactory .videoText .factoryButton {
+  padding-top: 50px;
+}
+
+#section .sweetFactory .videoText .factoryButton p {
+  color: #1a1a1a;
+}
+
+#section .sweetFactory .videoText .factoryButton button {
+  border: none;
+  background: none;
+  font-size: 16px;
 }
 
 /*slidePage2*/
