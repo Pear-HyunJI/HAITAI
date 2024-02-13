@@ -281,7 +281,60 @@ img {
   justify-content: space-around;
 }
 
+#section .sweetWorld .symbol li {
+  transition: all 0.5s;
+}
+
+#section .sweetWorld .symbol li:nth-child(1) {
+  transform: scale(0.5);
+  opacity: 0;
+}
+
+#section .sweetWorld .symbol li:nth-child(2) {
+  transform: scale(0.5);
+  opacity: 0;
+}
+
+#section .sweetWorld .symbol li:nth-child(3) {
+  transform: scale(0.5);
+  opacity: 0;
+}
+
+#section .sweetWorld .symbol.on li:nth-child(1) {
+  transform: scale(1);
+  opacity: 1;
+}
+
+#section .sweetWorld .symbol.on li:nth-child(2) {
+  transform: scale(1);
+  opacity: 1;
+}
+
+#section .sweetWorld .symbol.on li:nth-child(3) {
+  transform: scale(1);
+  opacity: 1;
+}
+
 /*slidePage1*/
+
+#section .slidePage1 .slideContainer1 {
+  overflow: hidden;
+}
+
+#section .slidePage1 .slideContainer1 .productSlideOuter {
+  float: left;
+  width: 33.33%;
+}
+
+#section .slidePage1 .slideContainer1 .eventSlideOuter {
+  float: left;
+  width: 33.33%;
+}
+
+#section .slidePage1 .slideContainer1 .mallSlideOuter {
+  float: left;
+  width: 33.33%;
+}
 
 #section .slidePage1 {
   background: #544f4f;
@@ -679,7 +732,7 @@ img {
 
 }
 
-#section .sweetFactory .videoText .factoryButton i.fa-cookie {
+#section .sweetFactory .videoText .factoryButton i {
   color: #523f2f;
   font-size: 20px;
 }
@@ -850,4 +903,21 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.goTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+  cursor: pointer;
+  background: #de1d85;
+  border-radius: 50%;
+  color: #fff;
+
+  width: 50PX;
+  height: 50PX;
+  text-align: center;
+  line-height: 50px;
+
 }

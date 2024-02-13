@@ -26,14 +26,29 @@ $(window).resize(function () {
   getWindowWidth();
 });
 
-//slidePage1
-$(".slideContainer1").slick({
-  autoplay: true,
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  arrows: true,
+// sweetWorld
+let symbolNear =
+  $("#section .sweetWorld .symbol").offset().top +
+  $("#section .sweetWorld .symbol").outerHeight() / 5;
+
+$(window).on("scroll", function () {
+  let sct = $(this).scrollTop() + $(this).height();
+
+  if (sct >= symbolNear) {
+    $("#section .sweetWorld .symbol").addClass("on");
+  } else {
+    $("#section .sweetWorld .symbol").removeClass("on");
+  }
 });
+
+//slidePage1
+// $(".slideContainer1").slick({
+//   autoplay: true,
+//   infinite: true,
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   arrows: true,
+// });
 
 $(".productSlideInner").slick({
   autoplay: true,
@@ -152,13 +167,39 @@ $("#nav .depth1 > li").hover(
 );
 
 //sweetFactory a
-$(".sweetFactory .videoText .factoryButton .a").on(
-  "mouseover mouseout",
-  function () {
-    if (!$(this).find("i").hasClass("fa-cookie-bite")) {
-      $(this).addClass("fa-cookie-bite").removeClass("fa-cookie");
-    } else {
-      $(this).addClass("fa-cookie").removeClass("fa-cookie-bite");
-    }
+
+$(".factoryButton a")
+  .on("mouseover", function () {
+    // 마우스 오버 시
+    $(this)
+      .find("i.fa-cookie")
+      .removeClass("fa-cookie")
+      .addClass("fa-cookie-bite");
+  })
+  .on("mouseout", function () {
+    // 마우스 아웃 시
+    $(this)
+      .find("i.fa-cookie-bite")
+      .removeClass("fa-cookie-bite")
+      .addClass("fa-cookie");
+  });
+
+//goTop
+
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 200) {
+    $(".goTop").fadeIn();
+  } else {
+    $(".goTop").fadeOut();
   }
-);
+});
+
+$(".goTop").on("click", function () {
+  $("html").animate(
+    {
+      scrollTop: 0,
+    },
+    500
+  );
+  return false;
+});
