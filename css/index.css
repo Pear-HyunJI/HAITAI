@@ -40,6 +40,44 @@ img {
   text-indent: -9999px;
 }
 
+/* popup */
+.popup {
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #de1d85;
+  background: #e7e7e7;
+  padding: 15px;
+  z-index: 99999999;
+  display: none;
+}
+
+.popup.on {
+  display: block;
+}
+
+.popup .close {
+  background: #5a5852;
+  color: #fff;
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.popup .close button {
+  background: #fff;
+  color: #000;
+  position: absolute;
+  top: 6px;
+  right: 5px;
+  border: none;
+}
+
+
 
 /*<header>*/
 
