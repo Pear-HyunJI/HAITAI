@@ -203,3 +203,38 @@ $(".goTop").on("click", function () {
   );
   return false;
 });
+
+//popup창
+$(".popup .close button").on("click", function () {
+  if ($(this).prev().prop("checked")) {
+    let tts = Date.now() + 100000;
+    const obj = {
+      check: "yes",
+      expire: tts,
+    };
+    localStorage.setItem("objkey", JSON.stringify(obj));
+  }
+  $(".popup").removeClass("on");
+});
+
+$(window).on("load", function () {
+  $("html").animate(
+    {
+      scrollTop: 0,
+    },
+    100
+  );
+
+  let objString = localStorage.getItem("objkey");
+  if (objString) {
+    const obj = JSON.parse(objString);
+    if (Date.now() > obj.expire) {
+      $(".popup").addClass("on");
+      localStorage.removeItem("objkey");
+    } else {
+      $(".popup").removeClass("on");
+    }
+  } else {
+    $(".popup").addClass("on");
+  }
+});
