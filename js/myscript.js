@@ -2,24 +2,29 @@ function getWindowWidth() {
   let ww = $(window).width();
   if (ww > 1089) {
     $("html").addClass("pc").removeClass("mobile");
-    $("#header .menuopen")
-      .find("i")
-      .removeClass("fa-times")
-      .addClass("fa-bars");
     $("#header #nav").css({
       display: "flex",
       width: "auto",
     });
-    $("nav .depth1 > li").removeClass("on");
+    $("#header .depth1 > li").removeClass("on").find(".depth2").hide();
+    if ($("#header #nav").parent().is(".cover")) {
+      $("#header #nav").unwrap();
+    }
   } else {
     $("html").addClass("mobile").removeClass("pc");
     $("#header #nav").css({
       display: "none",
       width: "100%",
     });
+    $("html").addClass("mobile").removeClass("pc");
+    $("#header .menuopen")
+      .find("i")
+      .removeClass("fa-times")
+      .addClass("fa-bars");
+    $("#header #nav").removeClass("on");
+    $("nav .depth1 > li").removeClass("on");
   }
 }
-
 getWindowWidth();
 
 $(window).resize(function () {
@@ -202,4 +207,39 @@ $(".goTop").on("click", function () {
     500
   );
   return false;
+});
+
+//popup창
+$(".popup .close button").on("click", function () {
+  if ($(this).prev().prop("checked")) {
+    let tts = Date.now() + 100000;
+    const obj = {
+      check: "yes",
+      expire: tts,
+    };
+    localStorage.setItem("objkey", JSON.stringify(obj));
+  }
+  $(".popup").removeClass("on");
+});
+
+$(window).on("load", function () {
+  $("html").animate(
+    {
+      scrollTop: 0,
+    },
+    100
+  );
+
+  let objString = localStorage.getItem("objkey");
+  if (objString) {
+    const obj = JSON.parse(objString);
+    if (Date.now() > obj.expire) {
+      $(".popup").addClass("on");
+      localStorage.removeItem("objkey");
+    } else {
+      $(".popup").removeClass("on");
+    }
+  } else {
+    $(".popup").addClass("on");
+  }
 });

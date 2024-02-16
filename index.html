@@ -19,6 +19,12 @@
     </head>
 
     <body>
+        <div class="popup"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur non esse quasi magni
+            laudantium consequatur fuga laboriosam, alias recusandae ullam dignissimos quod consectetur deleniti dolorem
+            consequuntur ex natus adipisci voluptas. <div class="close"> 오늘 하루 창 열지않기<input type="checkbox">
+                <button type="button">닫기</button>
+            </div>
+        </div>
         <header id="header">
             <div class="row">
                 <h1>
@@ -90,6 +96,13 @@
                                 <li><a href="#"><i class="fa-solid fa-circle"></i>&nbsp;&nbsp;&nbsp;IR정보</a></li>
                             </ul>
                         </li>
+                        <li>
+                            <form class="searchContainer2" action="/search" method="get">
+                                <input type="text" id="search" name="search" placeholder="SEARCH">
+                                <button type="submit" id="searchBtn"><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </li>
                     </ul>
                 </nav>
                 <div class="subbg">
@@ -98,10 +111,6 @@
                     <!-- <img src="./img/제품소개 (1).png" alt=""> -->
                     <span class="blind">suvnavImg 제품소개</span>
                 </div>
-                <form class="searchContainer2" action="/search" method="get">
-                    <input type="text" id="search" name="search" placeholder="SEARCH">
-                    <button type="submit" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
             </div>
         </header>
         </div>
